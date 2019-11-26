@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    gcp:
+      credentials:
+        location: ${GOOGLE_CREDENTIAL_FILE_LOCATION:classpath:springboot2-fcm-firebase-adminsdk-24wcu-f96abe5f51.json}
+      project-id: ${GOOGLE_PROJECT_ID:springboot2-fcm}
+  application:
+    name: springboot-google-cloud-fcm
+server:
+  servlet:
+    context-path: /google-fcm
+  port: ${APPLICATION_PORT:8080}
